@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Алексеевич](https://up.htmlacademy.ru/htmlcss-individual/2/user/2355379).
-* Наставник: `Неизвестно`.
+* Наставник: `Лучший)` (https://htmlacademy.ru/profile).
 
 ---
 
