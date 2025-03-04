@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Алексеевич](https://up.htmlacademy.ru/htmlcss-individual/2/user/2355379).
-* Наставник: `Лучший)` (https://htmlacademy.ru/profile).
+* Наставник: `Станислав Михайлов` (https://htmlacademy.ru/profile/id139638).
 * Сайт: [Мой проект Седона](https://igor-alexeevich.github.io/2355379-sedona-2/)
 ---
 
