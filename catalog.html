@@ -18,7 +18,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="">
-          О седоне
+          О Седоне
         </a>
       </li>
       <li class="nav-item">
@@ -49,7 +49,8 @@
       <ul class="nav-crumbs-list">
         <li class="nav-crumbs-item">
           <a class="crumbs-link" href="index.html">
-            <span class="crumbs"></span></a>
+            <span class="crumbs"></span>
+          </a>
         </li>
         <li class="nav-crumbs-item">
           <a class="crumbs-link">
@@ -62,7 +63,7 @@
  <section class="hotels">
   <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
   <form class="hotels-filter" action="http://echo.htmlacademy.ru" method="get">
-    <fildset class="infrastructure">
+    <fieldset class="infrastructure">
       <legend class="infrastructure-title">Инфраструктура:</legend>
       <ul class="infrastructure-list">
         <li class="infrastructure-item">
@@ -78,14 +79,14 @@
           </label>
         </li>
         <li class="infrastructure-item">
-          <label class="control" for="wi-wi">
-            <input class="control-input" type="checkbox" name="wi-wi"  id="wi-fi">
+          <label class="control" for="wi-fi">
+            <input class="control-input" type="checkbox" name="wi-fi"  id="wi-fi">
             Wi-Fi
           </label>
         </li>
       </ul>
-    </fildset>
-    <fildset class="housing">
+    </fieldset>
+    <fieldset class="housing">
       <legend class="housing-title">Инфраструктура:</legend>
         <ul class="housing-list">
           <li class="housing-item">
@@ -107,20 +108,23 @@
             </label>
           </li>
         </ul>
-    </fildset>
-    <fildset class="calculation">
+    </fieldset>
+    <fieldset class="calculation">
       <legend class="cost">Стоимость, ₽:</legend>
-        <label for="" class="cost-from-title">
-          <input type="text" class="cost-from">
-        </label>
-        <label for="" class="cost-before-title"></label>
-          <input type="text" class="cost-before">
-        </label>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
-    </fildset>
+      <label class="cost-from-title">
+        <input class="cost-from" type="number" value="0">от
+      </label>
+      <label class="cost-before-title">
+        <input class="cost-before" type="number" value="9000">до
+      </label>
+      <button class="cost-button-min" type="button">
+        <span>Изменить минимальную цену</span>
+      </button>
+      <button class="cost-button-max" type="button">
+        <span>Изменить максимальную цену</span>
+      </button>
+    </fieldset>
+
     <button class="button button-active" type="submit">Применить</button>
     <button class="button" type="submit">Сбросить</button>
   </form>
@@ -130,23 +134,31 @@
   <p class="result-quantity">
     Найдено гостиниц: <span>38</span>
   </p>
-  <select class="select-control" aria-label="Сортировка" name="" id="">
+  <select class="select-control" aria-label="Сортировка">
     <option value="cheap">Сначала дешевые</option>
     <option value="popular">Сначала популярные</option>
     <option value="expensive">Сначала дорогие</option>
   </select>
-  <a href="#" class="button button-border">
-    <span class="visually-hidden">Показать карточки</span>
-  </a>
-  <a href="#" class="button">
-    <span class="visually-hidden">Показать по одной</span>
-  </a>
-  <a href="#" class="button">
-    <span class="visually-hidden">Показать список</span>
-  </a>
+  <ul class="result-list">
+    <li class="result-item">
+      <a href="#" class="button button-border">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+    </li>
+    <li class="result-item">
+      <a href="#" class="button">
+        <span class="visually-hidden">Показать по одной</span>
+      </a>
+    </li>
+    <li class="result-item">
+      <a href="#" class="button">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+    </li>
+  </ul>
 </section>
 
-<sectiop class="cards">
+<section class="cards">
   <div class="hotel-card">
     <a href="" class="hotel-card-link">
       <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -195,31 +207,35 @@
     <div class="stars"></div>
     <div class="rating">рейтинг: <span>5.0</span></div>
   </div>
-  <ul class="pagination">
-    <li class="pagination-item">
-      <a href="" class="pagination-link pagination-prev pagination-disabled">
-        <span class="visually-hidden">Предыдущая страница</span></a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link pagination-current">1</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">2</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">3</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">4</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">...</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">10</a>
-    </li>
-  </ul>
-</sectiop>
+
+    <nav class="inner-nav">
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a href="" class="pagination-link pagination-prev pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span></a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+    </nav>
+
+</section>
 <section class="subscription">
   <h2 class="subscription-title">
     Подпишитесь на рассылку
