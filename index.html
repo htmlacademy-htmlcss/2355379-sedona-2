@@ -29,14 +29,14 @@
           </li>
         </ul>
         <ul class="nav-user">
-          <li class="user-find">
+          <li class="user-link user-find">
             <span class="visually-hidden">Поиск</span>
           </li>
-          <li class="user-favorites">
+          <li class="user-link user-favorites">
             <span class="visually-hidden">Избранное</span>
-            <span class="user-counter">12</span>
+            <span class="user-link user-counter">12</span>
           </li>
-          <li class="user-registration">
+          <li class="user-link user-registration">
             <button class="button button-registration">Хочу сюда!</button>
           </li>
         </ul>
@@ -45,18 +45,22 @@
 
     <main class="page-main">
       <section class="advantages">
-        <h1 class="visually-hidden">
-          Туристический городок Седона
-        </h1>
-        <img class="advantages-billboard" src="images/welcome.png" width="458" height="352" alt="Рекламный щит - Добро пожаловать в Седону!">
-        <h2 class="slogan">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p class="advantages-reasons">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <div class="background-billboard">
+          <h1 class="visually-hidden">
+            Туристический городок Седона
+          </h1>
+          <img class="advantages-billboard" src="images/welcome.png" width="458" height="352" alt="Рекламный щит - Добро пожаловать в Седону!">
+        </div>
+        <div class="slogan-wrapper">
+          <h2 class="title slogan">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="slogan-reasons">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
         <ul class="reasons-list">
-          <li class="reasons-item">
+          <li class="inner-item reasons-item">
             <h3 class="reasons-title">
               Настоящий городок
             </h3>
@@ -90,7 +94,7 @@
             </p>
           </li>
           <li class="reasons-item">
-            <h3 class="reasons-title">
+            <h3 class="inner-item reasons-title">
               Там есть мост дьявола
             </h3>
             <p class="reasons-description">
@@ -102,7 +106,7 @@
       </section>
 
       <section class="service">
-        <h2 class="service-title">
+        <h2 class="title service-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
         <p class="service-staff">
@@ -137,13 +141,13 @@
       </section>
 
       <section class="hotel-offers">
-        <h2 class="offers-title">
+        <h2 class="title offers-title">
           Заинтересовались?
         </h2>
         <p class="offers-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="offers-search" href="">
+        <a class="button offers-search" href="">
           поиск гостиницы в Седоне
         </a>
       </section>
@@ -170,19 +174,29 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="vk" href="">В Контакте</a>
+              <a class="vk" href="">
+                <span class="visually-hidden">В Контакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/></svg>
+              </a>
             </li>
             <li class="social-item">
-              <a class="telegram" href="">Телеграм</a>
+
+              <a class="telegram" href="">
+                <span class="visually-hidden">Телеграм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path fill="#83B3D3" d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/></svg>
+              </a>
             </li>
             <li class="social-item">
-              <a class="youtube" href="">Ютуб</a>
+              <a class="youtube" href="">
+                <span class="visually-hidden">Ютуб</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path fill="#83B3D3" d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/></svg>
+              </a>
             </li>
           </ul>
         </section>
         <address class="footer-phone">
-          <h2 class="visually-hidden phone">Наш телефон</h2>
-          <a href="tel:+78128121212">
+          <h2 class="visually-hidden">Наш телефон</h2>
+          <a class="phone-link" href="tel:+78128121212">
             +7 (812) 812-12-12
           </a>
         </address>
