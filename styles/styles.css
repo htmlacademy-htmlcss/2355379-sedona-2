@@ -256,8 +256,40 @@ html {
   display: flex;
   flex-direction: column;
 }
+.result-search {
+  display: flex;
+  align-items: center;
+  padding: 50px 70px 40px;
+}
+.result-list {
+  width: 217px;
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-end;
+}
+.result-quantity {
+  margin-right: auto;
+}
+
+.cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 70px 80px 70px;
+}
+.hotel-card {
+  width: 340px;
+}
+
+
 .rating {
   background-color: #f2f2f2;
+}
+
+.pagination {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 0;
 }
 .pagination-item {
   list-style-type: none;
