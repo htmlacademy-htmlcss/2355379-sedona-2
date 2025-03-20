@@ -17,6 +17,7 @@ html {
 }
 
 .page-body {
+  height: 100%;
   width: 1280px;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
@@ -27,6 +28,9 @@ html {
   background-color: #f2f5f2;;
 }
 .page-container {
+  display: flex;
+  flex-direction: column;
+min-height: 100%;
   margin: 0 auto;
   width: 1200px;
 }
@@ -90,6 +94,7 @@ html {
 
 .page-main {
   margin: 0 auto;
+  flex-grow: 1;
 }
 .advantages-billboard {
   margin: 0 auto;
