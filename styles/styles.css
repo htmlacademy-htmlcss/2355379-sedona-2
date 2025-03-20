@@ -247,6 +247,14 @@ html {
   color: #ffffff;
   background-color: #82b3d3;
   background: url("../images/hotels-background.jpg") no-repeat;
+  padding: 35px 70px 70px;
+}
+.hotels-filter {
+  display: flex;
+}
+.filter-button-wrap {
+  display: flex;
+  flex-direction: column;
 }
 .rating {
   background-color: #f2f2f2;
