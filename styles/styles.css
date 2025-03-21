@@ -134,10 +134,33 @@ min-height: 100%;
 }
 
 .reasons-list {
-  padding-left: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+}
+.reasons-item {
+  box-sizing: border-box;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+
+  min-height: 385px;
+
+}
+
+.reasons-item:first-child,
+.reasons-item:last-child {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.reasons-item:last-child .inner-item {
+  order: 1;
 }
 .reasons-title {
   font-size: 24px;
@@ -151,15 +174,8 @@ min-height: 100%;
   font-weight: 700;
   line-height: 28px;
 }
-.reasons-item {
-  display: flex;
-  list-style-type: none;
-  text-align: center;
-}
-.reasons-item:not(:first-child),
-.reasons-item:not(:last-child) {
 
-}
+
 .inner-item {
 
   color: #ffffff;
