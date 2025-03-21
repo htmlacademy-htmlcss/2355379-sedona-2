@@ -147,11 +147,8 @@ min-height: 100%;
   flex-direction: column;
   list-style-type: none;
   text-align: center;
-
   min-height: 385px;
-
 }
-
 .reasons-item:first-child,
 .reasons-item:last-child {
   padding: 0;
@@ -174,10 +171,7 @@ min-height: 100%;
   font-weight: 700;
   line-height: 28px;
 }
-
-
 .inner-item {
-
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -307,6 +301,20 @@ min-height: 100%;
 }
 .hotel-card {
   width: 340px;
+  min-height: 438px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hotel-card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.hotel-card-link {
+  display: flex;
+  flex-direction: column
+}
+.hotel-card-img {
+  order: -1;
 }
 
 
