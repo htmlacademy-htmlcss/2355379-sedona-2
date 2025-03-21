@@ -295,6 +295,9 @@ min-height: 100%;
 .hotels-filter {
   display: flex;
 }
+fieldset {
+  border: none;
+}
 .filter-button-wrap {
   display: flex;
   flex-direction: column;
