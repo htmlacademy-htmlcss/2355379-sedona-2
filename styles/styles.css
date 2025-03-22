@@ -269,14 +269,16 @@ html {
 .offers-search {
   margin-top: 54px;
 }
+
+.subscription {
+  background-color: #ffffff;
+  padding: 96px 258px 104px;
+  text-align: center;
+}
 .subscription-background {
   color: #ffffff;
   background-color: #486998;
   background: url("../images/subscribe-background.jpg") no-repeat;
-}
-.subscription {
-  padding: 96px 258px 104px;
-  text-align: center;
 }
 .subscription-wrap {
   width: 430px;
@@ -286,6 +288,10 @@ html {
   color: #000000;
 }
 
+.footer {
+  color:#000000;
+  background-color: #ffffff;
+}
 .footer-wrap {
   display: flex;
   justify-content: space-between;
@@ -331,7 +337,9 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
 .result-search {
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   padding: 50px 70px 40px;
@@ -346,6 +354,9 @@ fieldset {
   margin-right: auto;
 }
 
+.cards {
+  background-color: #ffffff;
+}
 .cards-wrap {
   display: flex;
   flex-wrap: wrap;
