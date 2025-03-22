@@ -125,6 +125,7 @@ min-height: 100%;
   margin: 0 auto;
   padding: 69px 274.5px;
   margin-bottom: 21px;
+  background-color: #ffffff;
 }
 .slogan-reasons {
   font-size: 22px;
@@ -134,11 +135,12 @@ min-height: 100%;
 }
 
 .reasons-list {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .reasons-item {
   box-sizing: border-box;
@@ -198,47 +200,76 @@ min-height: 100%;
 
 .service {
   text-align: center;
+  background-color: #ffffff;
 }
 .title-wrap {
   padding: 69px 347.5px 64px;
+}
+.service-title {
+  margin: 0;
 }
 .service-staff {
   font-size: 22px;
   line-height: 26px;
 }
-
 .service-list {
   margin: 0;
   padding-left: 0;
   display: flex;
 }
-
-.service-item:nth-child(1) {
+.service-list .service-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.item-title {
+  margin-top: 102px;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service-item:nth-child(1) .service-wrap {
   background: url("../images/service/hous.svg") no-repeat;
   background-position: 50% 0%;
 }
-.service-item:nth-child(2) {
+.service-item:nth-child(2) .service-wrap {
   background: url("../images/service/food.svg") no-repeat;
   background-position: 50% 0%;
 }
-.service-item:nth-child(3) {
+.service-item:nth-child(3) .service-wrap {
   background: url("../images/service/souvenir.svg") no-repeat;
   background-position: 50% 0%;
 }
+.service-wrap {
+  width: 230px;
+  align-self: center;
+}
 .service-item {
-  padding: 81px 85px;
+  width: 400px;
+  min-height: 385px;
+  padding: 0;
   list-style-type: none;
-  background-position: 50% 50%;
+  //background-color: #8fb3d3;
 }
 
 .hotel-offers {
   padding: 96px 304px;
   text-align: center;
+  background-color: #ffffff;
+}
+.offers-title {
+margin: 0;
+margin-bottom: 20px;
 }
 .offers-description {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
+}
+.offers-search {
+  margin-top: 54px;
 }
 .subscription-background {
   color: #ffffff;
