@@ -46,19 +46,33 @@ html {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  padding: 0 70px;
 }
 .nav {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
+.logo-img {
+  position: absolute;
+  display: inline;
+  vertical-align: top;
+}
 .nav-link {
+  display: block;
+  padding: 20px 16px;
   line-height: 24px;
   color: inherit;
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  margin: 0;
+}
+.user-link {
+  min-width: 44px;
+  min-height: 64px;
+
 }
 .user-link:nth-child(1) {
   margin-left: auto;
@@ -73,18 +87,17 @@ html {
 }
 .nav-list {
   display: flex;
-  margin: 0 0 0 30px;
+  margin: 0;
+  margin-left: 168px;
   padding: 0;
 }
 .nav-user {
   display: flex;
   width: 356px;
   padding: 0;
-  margin-left: auto;
+  margin: 0 0 0 auto;
 }
-.nav-item {
-  padding: 20px 16px;
-}
+
 .button {
   color: #ffffff;
   background-color: #756157;
@@ -298,11 +311,21 @@ html {
   align-items: center;
   padding: 40px 70px 30px;
 }
+
 .social-list {
+  width: 235px;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
 }
 .social-item {
+  display: block;
+  box-sizing: border-box;
+  width: 47px;
+  height: 40px;
+}
+.social {
+  display: block;
   padding: 13px 11.5px;
 }
 .button-send {
