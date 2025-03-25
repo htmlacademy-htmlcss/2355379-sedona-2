@@ -74,8 +74,8 @@
               Фильтр выбора гостиниц
             </h2>
             <form class="hotels-filter" action="http://echo.htmlacademy.ru" method="get">
-              <fieldset class="infrastructure">
-                <legend class="infrastructure-title">Инфраструктура:</legend>
+              <fieldset class="fieldset infrastructure">
+                <legend class="legend infrastructure-title">Инфраструктура:</legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <label class="control" for="swimm">
@@ -97,8 +97,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="housing">
-                <legend class="housing-title">Тип жилья:</legend>
+              <fieldset class="fieldset housing">
+                <legend class="legend housing-title">Тип жилья:</legend>
                   <ul class="housing-list">
                     <li class="housing-item">
                       <label class="control" for="hotel">
@@ -120,7 +120,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="calculation">
+              <fieldset class="fieldset calculation">
                 <legend class="cost">
                   Стоимость, ₽:
                 </legend>
@@ -138,10 +138,10 @@
                 </button>
               </fieldset>
               <div class="filter-button-wrap">
-                <button class="button-send button button-active" type="submit">
+                <button class="button button-send button-active" type="submit">
                   Применить
                 </button>
-                <button class="button" type="submit">
+                <button class="button button-reset" type="submit">
                   Сбросить
                 </button>
               </div>
@@ -156,119 +156,121 @@
           <p class="result-quantity">
             Найдено гостиниц: <span class="number-hotels">38</span>
           </p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="select-wrap">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.67495 7.7123L11.775 2.4123C12.075 2.1123 12.075 1.5123 11.775 1.2123C11.475 0.912305 10.875 0.912305 10.575 1.2123L6.07495 5.9123L1.57495 1.2123C1.27495 0.912305 0.674951 0.912305 0.374951 1.2123C0.174951 1.3123 0.0749512 1.6123 0.0749512 1.8123C0.0749512 2.0123 0.174951 2.2123 0.374951 2.4123L5.47495 7.7123C5.77495 8.1123 6.37495 8.1123 6.67495 7.7123Z" fill="black"/>
-          </svg>
-          <ul class="result-list">
-            <li class="result-item result-item-border">
-              <a class="button-view" href="#">
-                <span class="visually-hidden">Показать плиткой</span>
-                <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
-              </a>
-            </li>
-            <li class="result-item">
-              <a class="button-view" href="#">
-                <span class="visually-hidden">Показать по одной</span>
-                <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
-              </a>
-            </li>
-            <li class="result-item">
-              <a class="button-view" href="#">
-                <span class="visually-hidden">Показать списком</span>
-                <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
-              </a>
-            </li>
-          </ul>
+            </svg>
+            <ul class="result-list">
+              <li class="result-item result-item-border">
+                <a class="button-view" href="#">
+                  <span class="visually-hidden">Показать плиткой</span>
+                  <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
+                </a>
+              </li>
+              <li class="result-item">
+                <a class="button-view" href="#">
+                  <span class="visually-hidden">Показать по одной</span>
+                  <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
+                </a>
+              </li>
+              <li class="result-item">
+                <a class="button-view" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                  <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
       <section class="cards">
-        <div class="cards-wrap">
-          <div class="hotel-card">
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">
-                Amara Resort & Spa
-              </h3>
-              <img class="hotel-card-img" src="images/hotels/amara-resort.jpg" width="300" height="212" alt="Горная расщелина с видом на ночное небо">
-            </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-cost">От 4000 ₽</span>
-            <button class="button button-details">
-              подробнее
-            </button>
-            <button class="button-send button">
-              в избранное
-            </button>
-            <p class="stars">
-              4 звезды
-            </p>
-            <div class="rating">рейтинг: <span class="number-rating">8.5</span></div>
-          </div>
-          <div class="hotel-card">
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">
-                Villas at Poco Diablo
-              </h3>
-              <img class="hotel-card-img" src="images/hotels/villas-poco.jpg" width="300" height="212" alt="Горная цепь с тучами и радугой">
-            </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-cost">От 5000 ₽</span>
-            <button class="button button-details">
-              подробнее
-            </button>
-            <button class="button-send button">
-              в избранное
-            </button>
-            <p class="stars">
-              4 звезды
-            </p>
-            <div class="rating">рейтинг: <span class="number-rating">9.2</span></div>
-          </div>
-          <div class="hotel-card">
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">
-                Desert Quail Inn
-              </h3>
-              <img class="hotel-card-img" src="images/hotels/desert-quail.jpg" width="300" height="212" alt="Скала солнечным днем">
-            </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-cost">От 2500 ₽</span>
-            <button class="button button-details">
-              подробнее
-            </button>
-            <button class="button-send button">
-              в избранное
-            </button>
-            <p class="stars">
-              3 звезды
-            </p>
-            <div class="rating">рейтинг: <span class="number-rating">6.9</span></div>
-          </div>
-          <div class="hotel-card">
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">
-                GreenTree Inn
-              </h3>
-              <img class="hotel-card-img" src="images/hotels/green-tree.jpg" width="300" height="212" alt="Вид скалы на фоне заката">
-            </a>
-            <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-cost">От 1500 ₽</span>
-            <button class="button button-details">
-              подробнее
-            </button>
-            <button class="button-send button">
-              в избранное
-            </button>
-            <p class="stars">
-              2 звезды
-            </p>
-            <div class="rating">рейтинг: <span class="number-rating">5.0</span></div>
-          </div>
-        </div>
+          <ul class="cards-list">
+            <li class="cards-item">
+              <a class="hotel-card-link" href="">
+                <h3 class="hotel-card-title">
+                  Amara Resort & Spa
+                </h3>
+                <img class="hotel-card-img" src="images/hotels/amara-resort.jpg" width="300" height="212" alt="Горная расщелина с видом на ночное небо">
+              </a>
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-cost">От 4000 ₽</span>
+              <button class="button button-details">
+                подробнее
+              </button>
+              <button class="button-send button">
+                в избранное
+              </button>
+              <p class="stars">
+                4 звезды
+              </p>
+              <div class="rating">рейтинг: <span class="number-rating">8.5</span></div>
+            </li>
+            <li class="cards-item">
+              <a class="hotel-card-link" href="">
+                <h3 class="hotel-card-title">
+                  Villas at Poco Diablo
+                </h3>
+                <img class="hotel-card-img" src="images/hotels/villas-poco.jpg" width="300" height="212" alt="Горная цепь с тучами и радугой">
+              </a>
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-cost">От 5000 ₽</span>
+              <button class="button button-details">
+                подробнее
+              </button>
+              <button class="button-send button">
+                в избранное
+              </button>
+              <p class="stars">
+                4 звезды
+              </p>
+              <div class="rating">рейтинг: <span class="number-rating">9.2</span></div>
+            </li>
+            <li class="cards-item">
+              <a class="hotel-card-link" href="">
+                <h3 class="hotel-card-title">
+                  Desert Quail Inn
+                </h3>
+                <img class="hotel-card-img" src="images/hotels/desert-quail.jpg" width="300" height="212" alt="Скала солнечным днем">
+              </a>
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-cost">От 2500 ₽</span>
+              <button class="button button-details">
+                подробнее
+              </button>
+              <button class="button-send button">
+                в избранное
+              </button>
+              <p class="stars">
+                3 звезды
+              </p>
+              <div class="rating">рейтинг: <span class="number-rating">6.9</span></div>
+            </li>
+            <li class="cards-item">
+              <a class="hotel-card-link" href="">
+                <h3 class="hotel-card-title">
+                  GreenTree Inn
+                </h3>
+                <img class="hotel-card-img" src="images/hotels/green-tree.jpg" width="300" height="212" alt="Вид скалы на фоне заката">
+              </a>
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-cost">От 1500 ₽</span>
+              <button class="button button-details">
+                подробнее
+              </button>
+              <button class="button-send button">
+                в избранное
+              </button>
+              <p class="stars">
+                2 звезды
+              </p>
+              <div class="rating">рейтинг: <span class="number-rating">5.0</span></div>
+            </li>
+          </ul>
 
         <nav class="inner-nav">
           <ul class="pagination">
@@ -322,23 +324,24 @@
             </h2>
             <ul class="social-list">
               <li class="social-item">
-                <a class="vk" href="">
+                <a class="social vk" href="">
                   <span class="visually-hidden">В Контакте</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" clip-rule="evenodd"/></svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="telegram" href="">
+                <a class="social telegram" href="">
                   <span class="visually-hidden">Телеграм</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path fill="#83B3D3" d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/></svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="youtube" href="">
+                <a class="social youtube" href="">
                   <span class="visually-hidden">Ютуб</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path fill="#83B3D3" d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/></svg>
                 </a>
               </li>
+
             </ul>
           </section>
           <h2 class="visually-hidden">
@@ -357,6 +360,7 @@
           </section>
         </div>
           <p class="visually-hidden" style="font-size: 12px; text-align: right;">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+
       </footer>
     </div>
   </body>
