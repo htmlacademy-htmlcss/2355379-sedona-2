@@ -350,11 +350,55 @@ html {
   background: url("../images/hotels-background.jpg") no-repeat;
   padding: 35px 70px 70px;
 }
+.inner-header-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 78px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.nav-crumbs-list {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style-type: none;
+}
+.nav-crumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+.crumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .hotels-filter {
   display: flex;
 }
-fieldset {
+.fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+.legend  {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.infrastructure-list,
+.housing-list {
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+}
+.infrastructure-list {
+  margin-right: 70px;
+}
+.infrastructure-item:not(.infrastructure-item:last-child),
+.housing-item:not(.housing-item:last-child) {
+  margin-bottom: 16px;
+}
+.calculation {
+  margin-left: auto;
 }
 .filter-button-wrap {
   display: flex;
@@ -371,35 +415,56 @@ fieldset {
   width: 217px;
   display: flex;
   padding-left: 0;
+  margin: 0;
   justify-content: flex-end;
 }
+.result-item {
+  margin-right: 8px;
+}
 .result-quantity {
-  margin-right: auto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0 auto 0 0;
+  text-transform: uppercase;
+}
+.select-wrap {
+  display: flex;
+  color: #333333;
+  background-color: #ffffff;
+}
+.select-control {
+  width: 292px;
+  margin-right: 70px;
+  border: 2px solid#e5e5e5;
+  border-radius: 4px;
 }
 
 .cards {
   background-color: #ffffff;
 }
-.cards-wrap {
+
+.cards-list {
+  margin: 0 70px 80px 70px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 70px 80px 70px;
 }
-.hotel-card {
+.cards-item {/**/
   width: 340px;
   min-height: 438px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.hotel-card:not(:nth-child(3n)) {
+.cards-item:not(:nth-child(3n)) {
   margin-right: 20px;
 }
-.hotel-card-link {
+.cards-item-link {
   display: flex;
   flex-direction: column
 }
-.hotel-card-img {
+.cards-item-img {
   order: -1;
 }
 
