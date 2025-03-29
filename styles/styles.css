@@ -532,10 +532,15 @@ html {
   order: -1;
 }
 .hotel-card-type {
-
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 .hotel-card-cost {
-  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
 }
 .button-details {
   font-size: 16px;
@@ -546,12 +551,17 @@ html {
 .button-favourites {
   background-color: #82b3d3;
   border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .button-favourites-active {
   background-color: #7db54f;
 }
 .stars {
   margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   /*width: 73px;
   height: 18px;
   background-image: url(/images/star.svg);*/
