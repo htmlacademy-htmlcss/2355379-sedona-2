@@ -191,6 +191,7 @@ html {
   flex-direction: column;
   list-style-type: none;
   text-align: center;
+  position: relative;
 }
 .reasons-item:nth-child(3n) {
   background-color: rgba(131, 179, 211, 0.2);
@@ -211,6 +212,7 @@ html {
 .reasons-item > .reasons-wrap {
   width: 230px;
   margin: auto;
+
 }
 .inner-wrap {
   width: 230px;
@@ -222,6 +224,7 @@ html {
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .reasons-title::before {
   position: absolute;
   content: "";
