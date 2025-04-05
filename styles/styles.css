@@ -491,6 +491,7 @@ html {
 }
 
 /* CATALOG.HTML */
+/* ************************************************************* */
 .hotel-search-wrapper {
   color: #ffffff;
   background-color: #82b3d3;
@@ -510,7 +511,19 @@ html {
   padding: 0 0 40px 0;
   list-style-type: none;
 }
-
+.nav-crumbs-item + .nav-crumbs-item {
+  display: flex;
+}
+.nav-crumbs-item + .nav-crumbs-item::before {
+  content: "";
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 8px;
+  height: 20px;
+  background-image: url(/images/crumb.svg);
+  background-repeat: no-repeat;
+}
 .crumbs-link {
   text-decoration: none;
   color: #ffffff;
