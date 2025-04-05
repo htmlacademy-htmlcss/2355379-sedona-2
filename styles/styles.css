@@ -628,8 +628,28 @@ html {
   height: 4px;
   background-color: #ffffff;
 }
-
-
+.cost-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.cost-button:hover {
+  border: none;
+}
+.cost-button:active {
+  outline: 2px solid #83b3d3;
+}
+.cost-button-min {
+  top: -8px;
+  left: -10px;
+}
+.cost-button-max {
+  top: -8px;
+  right: -10px;
+}
 .filter-button-wrap {
   display: flex;
   flex-direction: column;
