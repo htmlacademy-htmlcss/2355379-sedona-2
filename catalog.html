@@ -136,18 +136,26 @@
                 <legend class="cost">
                   Стоимость, ₽:
                 </legend>
-                <label class="cost-from-title">
-                  <input class="cost-from" type="number" value="0"><span class="visually-hidden">от</span>
-                </label>
-                <label class="cost-before-title">
-                  <input class="cost-before" type="number" value="9000"><span class="visually-hidden">до</span>
-                </label>
-                <button class="cost-button-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-                <button class="cost-button-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену</span>
-                </button>
+                  <div class="calculation-wrap">
+                    <div class="calculation-cost">
+                      <label class="cost-from-title">
+                        <input class="cost-from" type="number" value="0"><span class="visually-hidden">от</span>
+                      </label>
+                      <label class="cost-before-title">
+                        <input class="cost-before" type="number" value="9000"><span class="visually-hidden">до</span>
+                      </label>
+                    </div>
+                    <div class="calculation-scale">
+                      <div class="calculation-button-bar">
+                        <button class="cost-button-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="cost-button-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
               </fieldset>
               <div class="filter-button-wrap">
                 <button class="button button-send button-active" type="submit">
