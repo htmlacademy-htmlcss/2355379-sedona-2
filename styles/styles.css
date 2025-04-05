@@ -91,6 +91,7 @@ html {
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
+  color: #ffffff;
   left: 23px;
   top: 12px;
   text-align: center;
@@ -566,10 +567,13 @@ html {
   height: 20px;
   margin-right: 16px;
   background-color: #ffffff;
-  background-image: url(/images/check.svg);
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 4px;
+}
+.control-input:checked + .control-mark {
+  background-image: url("/images/check.svg");
 }
 /*
 .control-mark-svg {
@@ -751,7 +755,6 @@ html {
 }
 .hotel-card-link-img {
   grid-area: pictur;
-
   order: -1;
 }
 .hotel-card-img {
