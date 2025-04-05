@@ -529,7 +529,6 @@ html {
   color: #ffffff;
 }
 
-
 .hotels-filter {
   display: flex;
 }
@@ -556,6 +555,35 @@ html {
 .housing-item:not(.housing-item:last-child) {
   margin-bottom: 16px;
 }
+.control {
+  position: relative;
+  display: flex;
+
+}
+.control-mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  background-color: #ffffff;
+  background-image: url(/images/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 4px;
+}
+
+.control-mark-svg {
+  display: block;
+  margin: 25% auto;
+
+}
+.control-label {
+
+}
+
+
+/**/
+
 .calculation {
   margin-left: auto;
 }
