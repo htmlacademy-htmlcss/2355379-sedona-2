@@ -744,19 +744,20 @@ html {
 }
 .hotel-card-link-title {
   grid-area: title;
+  text-decoration: none;
 }
 .hotel-card-title {
   margin: 0;
 }
 .hotel-card-link-img {
   grid-area: pictur;
+
+  order: -1;
 }
 .hotel-card-img {
   vertical-align: baseline;
 }
-.hotel-card-link-img {
-  order: -1;
-}
+
 .hotel-card-type {
   display: flex;
   justify-content: left;
