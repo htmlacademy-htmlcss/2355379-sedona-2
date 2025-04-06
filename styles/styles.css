@@ -24,7 +24,8 @@ html {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
-  background-color: #f2f5f2;;
+  background-color: #f2f5f2;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 .page-container {
   display: flex;
@@ -123,9 +124,9 @@ html {
   height: 64px;
 }
 .nav-link {/**/
+  display: block;
   font-size: 20px;
   line-height: 24px;
-  display: block;
   padding: 20px 16px;
   line-height: 24px;
   color: inherit;
@@ -160,9 +161,16 @@ html {
   text-transform: uppercase;
 }
 .button-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   min-width: 160px;
   min-height: 36px;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .page-main {
@@ -494,6 +502,9 @@ html {
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
+}
+.htmlacademy-link {
+  display: block;
 }
 
 /* CATALOG.HTML */
