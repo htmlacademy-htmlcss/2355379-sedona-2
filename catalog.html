@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body class="page-body">
     <div class="page-container">
@@ -80,27 +81,35 @@
             </h2>
             <form class="hotels-filter" action="http://echo.htmlacademy.ru" method="post">
               <fieldset class="fieldset infrastructure">
-                <legend class="legend infrastructure-title">Инфраструктура:</legend>
+                <legend class="legend infrastructure-title">
+                  Инфраструктура:
+                </legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <label class="control" for="swimm">
                       <input class="control-input visually-hidden" type="checkbox" name="swimm" id="swimm" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label">Бассейн</span>
+                      <span class="control-label">
+                        Бассейн
+                      </span>
                     </label>
                   </li>
                   <li class="infrastructure-item">
                     <label class="control" for="parking">
-                      <input class="control-input visually-hidden" type="checkbox" name="parking"  id="parking" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" id="parking" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label">Парковка</span>
+                      <span class="control-label">
+                        Парковка
+                      </span>
                     </label>
                   </li>
                   <li class="infrastructure-item">
                     <label class="control" for="wi-fi">
-                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi"  id="wi-fi">
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                       <span class="control-mark"></span>
-                      <span class="control-label">Wi-Fi</span>
+                      <span class="control-label">
+                        Wi-Fi
+                      </span>
                     </label>
                   </li>
                 </ul>
@@ -110,20 +119,29 @@
                   <ul class="housing-list">
                     <li class="housing-item">
                       <label class="control" for="hotel">
-                        <input class="control-input" type="radio" name="housing" id="hotel" checked>
-                        Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="hotel" checked>
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Гостиница
+                        </span>
                       </label>
                     </li>
                     <li class="housing-item">
                       <label class="control" for="motel">
-                        <input class="control-input" type="radio" name="housing" id="motel">
-                        Мотель
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="motel">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Мотель
+                        </span>
                       </label>
                     </li>
                     <li class="housing-item">
                       <label class="control" for="apartment">
-                        <input class="control-input" type="radio" name="housing" id="apartment">
-                        Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="apartment">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Апартаменты
+                        </span>
                       </label>
                     </li>
                   </ul>
@@ -135,19 +153,25 @@
                   <div class="calculation-wrap">
                     <div class="calculation-cost">
                       <label class="cost-from-title">
-                        <input class="cost-from" type="number" value="0"><span class="visually-hidden">от</span>
+                        <input class="cost-from" type="number" value="0">
+                        <span class="cost-from-text"></span>
                       </label>
                       <label class="cost-before-title">
-                        <input class="cost-before" type="number" value="9000"><span class="visually-hidden">до</span>
+                        <input class="cost-before" type="number" value="9000" placeholder="до">
+                        <span class="cost-before-text"></span>
                       </label>
                     </div>
                     <div class="calculation-scale">
                       <div class="calculation-button-bar" style="left: 0; width: 186px;">
                         <button class="cost-button cost-button-min" type="button">
-                          <span class="visually-hidden">Изменить минимальную цену</span>
+                          <span class="visually-hidden">
+                            Изменить минимальную цену
+                          </span>
                         </button>
                         <button class="cost-button cost-button-max" type="button">
-                          <span class="visually-hidden">Изменить максимальную цену</span>
+                          <span class="visually-hidden">
+                            Изменить максимальную цену
+                          </span>
                         </button>
                       </div>
                     </div>
@@ -157,7 +181,7 @@
                 <button class="button button-send button-active" type="submit">
                   Применить
                 </button>
-                <button class="button button-reset" type="submit">
+                <button class="button button-reset" type="reset">
                   Сбросить
                 </button>
               </div>
@@ -180,19 +204,19 @@
             </select>
             <ul class="result-list">
               <li class="result-item result-item-border">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
                 </a>
               </li>
               <li class="result-item">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать по одной</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
                 </a>
               </li>
               <li class="result-item">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
                 </a>
@@ -214,9 +238,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 4000 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites">
               в избранное
             </button>
@@ -240,9 +264,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 5000 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites button-favourites-active">
               в избранное
             </button>
@@ -266,9 +290,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 2500 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites">
               в избранное
             </button>
@@ -291,9 +315,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 1500 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button-favourites button">
               в избранное
             </button>
