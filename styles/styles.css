@@ -605,7 +605,7 @@ html {
 .quantity-adults {
   grid-area: quantity-adults;
   width: 110px;
-  display: flex;
+  display: ;
 }
 .children {
   grid-area: children;
@@ -652,7 +652,7 @@ html {
   color: #333333;
 }
 .auth-form-adults {
-  display: inline-block;
+
   padding: 14px 10px;
   width: 110px;
   min-height: 48px;
@@ -661,25 +661,26 @@ html {
   box-sizing: border-box;
 }
 .minus {
-  box-sizing: border-box;
   width: 20px;
   height: 20px;
   border: none;
   position: relative;
-  top: 15px;
-  left: 20px;
+  top: 39px;
+  left: 10px;
   background-image: url(/images/svg/button-minus.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .plus {
   width: 20px;
   height: 20px;
   border: none;
   position: relative;
-  top: 15px;
-  right: 20px;
+  top: -33px;
+  left: 80px;
   background-image: url(/images/svg/button-plus.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .auth-form-info {
   width: 26px;
@@ -688,6 +689,15 @@ html {
   background-image: url(/images/svg/info.svg);
   background-repeat: no-repeat;
   background-color: #ffffff;
+}
+.auth-form-children {
+  position: relative;
+}
+.auth-form-info:hover {
+  cursor: pointer;
+}
+.auth-form-info:hover .auth-form-info-text {
+  display: block;
 }
 .auth-form-info-text {
   box-sizing: border-box;
@@ -701,20 +711,23 @@ html {
   background-color: #333333;
   border-radius: 10px;
   position: absolute;
-  top: 410px;
-  left: 301px;
+  top: 58px;
+  left: -60px;
+  display: none;
 }
+
 .auth-form-info-text::before {
   content: "";
   display: block;
-  width: 19px;
-  height: 18px;
+  width: 17px;
+  height: 16px;
   background-color: #333333;
   transform: rotate(45deg);
   position: relative;
-  top: -10px;
+  top: -8px;
   left: 95px;
 }
+
 
 /* CATALOG.HTML */
 /* ************************************************************* */
