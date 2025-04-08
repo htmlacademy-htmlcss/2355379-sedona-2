@@ -605,7 +605,7 @@ html {
 .quantity-adults {
   grid-area: quantity-adults;
   width: 110px;
-  display: ;
+
 }
 .children {
   grid-area: children;
@@ -658,9 +658,13 @@ html {
   min-height: 48px;
   border: none;
   background-color: #f2f2f2;
+  text-align: center;
   box-sizing: border-box;
 }
-.minus {
+.auth-form-children {
+  border: none;
+}
+.minus-adults {
   width: 20px;
   height: 20px;
   border: none;
@@ -671,7 +675,7 @@ html {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.plus {
+.plus-adults {
   width: 20px;
   height: 20px;
   border: none;
