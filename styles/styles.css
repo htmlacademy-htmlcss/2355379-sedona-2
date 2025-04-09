@@ -56,7 +56,6 @@ html {
 }
 .nav-logo-link {
   width: 140px;
-
 }
 .logo-img {/**/
   position: absolute;
@@ -336,15 +335,18 @@ html {
   justify-content: center;
 }
 .service-item:nth-child(1) .service-wrap {
-  background: url("../images/service/hous.svg") no-repeat;
+  background-image: url("../images/service/hous.svg");
+  background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 .service-item:nth-child(2) .service-wrap {
-  background: url("../images/service/food.svg") no-repeat;
+  background-image: url("../images/service/food.svg");
+  background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 .service-item:nth-child(3) .service-wrap {
-  background: url("../images/service/souvenir.svg") no-repeat;
+  background-image: url("../images/service/souvenir.svg");
+  background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 .service-wrap {
@@ -410,7 +412,8 @@ html {
 .subscription-background {
   color: #ffffff;
   background-color: #486998;
-  background: url("../images/subscribe-background.jpg") no-repeat;
+  background: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
 }
 .subscription-wrap {
   width: 684px;
@@ -517,7 +520,6 @@ html {
   display: none;
 }
 .modal {
-  width: 717px;
   position: relative;
   width: 577px;
   margin: auto;
@@ -531,13 +533,13 @@ html {
 .modal-close-button {
   position: absolute;
   padding: 0;
+  width: 52px;
   top: 64px;
   right: 52px;
-  width: 52px;
   height: 52px;
-  background-color: #f2f2f2;
   border: none;
-  background-image: url(/images/svg/close.svg);
+  background-color: #f2f2f2;
+  background-image: url("../images/svg/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -639,7 +641,7 @@ html {
   position: relative;
   top: 3px;
   right: 30px;
-  background-image: url(/images/svg/button-plus.svg);
+  background-image: url("../images/svg/button-plus.svg");
   border: none;
   cursor: pointer;
 }
@@ -653,7 +655,8 @@ html {
 .hotel-search-wrapper {
   color: #ffffff;
   background-color: #82b3d3;
-  background: url("../images/hotels-background.jpg") no-repeat;
+  background: url("../images/hotels-background.jpg");
+  background-repeat: no-repeat;
   padding: 35px 70px 70px;
 }
 .inner-header-title {Ы
@@ -679,7 +682,7 @@ html {
   margin-left: 10px;
   width: 8px;
   height: 20px;
-  background-image: url(/images/svg/crumb.svg);
+  background-image: url("../images/svg/crumb.svg");
   background-repeat: no-repeat;
 }
 .crumbs-link {
@@ -730,7 +733,7 @@ html {
   border-radius: 4px;
 }
 .control-input:checked + .control-mark {
-  background-image: url("/images/svg/check.svg");
+  background-image: url("../images/svg/check.svg");
 }
 .control-mark-radio {
   display: block;
@@ -744,7 +747,7 @@ html {
   border-radius: 20px;
 }
 .control-input:checked + .control-mark-radio {
-  background-image: url("/images/svg/radio-point.svg");
+  background-image: url("../images/svg/radio-point.svg");
 }
 
 .calculation {
@@ -902,7 +905,7 @@ input[type="number"]:focus {
   font-size: 18px;
   line-height: 21px;
   appearance: none;
-  background-image: url(/images/svg/arrow.svg);
+  background-image: url("../images/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: center right 20px;
