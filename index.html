@@ -262,33 +262,46 @@
             </h2>
 
             <form class="auth-form" action="https://echo/htmlacademy.ru" method="post">
-              <div class="auth-form-wrap">
-                <!--<div class="data-wrap">-->
+              <div class="date-wrap">
                 <label class="auth-form-label label-entry" for="auth-form-date-in">
                   дата заезда:
                 </label>
-                <input class="auth-form-data date-entry" type="date" id="auth-form-date-in" value="2020-04-27">
-                <p class="auth-form-detailed-in entry-detailed">
-                  Мы не можем отправить вас в прошлое.
-                </p>
-                <!--</div>-->
+                <div class="calendar-wrap">
+                  <input class="auth-form-data date-entry" type="date" id="auth-form-date-in" value="2020-04-27">
+                  <p class="auth-form-detailed-in entry-detailed">
+                    Мы не можем отправить вас в прошлое.
+                  </p>
+                </div>
+              </div>
+              <div class="date-wrap">
                 <label class="auth-form-label label-exit" for="auth-form-date-out">
                   дата выезда:
                 </label>
-                <input class="auth-form-data date-exit" type="date" id="auth-form-date-out">
-                <p class="auth-form-detailed-out exit-detailed">
-                  На эти даты есть свободные номера. Пока есть.
-                </p>
-
+                <div class="calendar-wrap">
+                  <input class="auth-form-data date-exit" type="date" id="auth-form-date-out" value="2023-09-01">
+                  <p class="auth-form-detailed-out exit-detailed">
+                    На эти даты есть свободные номера. Пока есть.
+                  </p>
+                </div>
+              </div>
+              <div class="guests">
                 <label class="auth-form-label label-adults" for="auth-form-adults">
                   взрослые:
                 </label>
-                <div class="quantity-adults">
-                  <button class="minus-adults"></button>
-                  <input class="auth-form-adults" type="text" id="auth-form-adults" value="2">
-                  <button class="plus-adults"></button>
-                </div>
-                <div class="auth-form-children children">
+                  <div class="button-minus-plus-wrap">
+                    <button class="button-minus">
+                      <svg class="svg-minus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <input class="auth-form-adults" type="text" id="auth-form-adults" value="2">
+                    <button class="button-plus">
+                      <svg  class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </div>
+
                   <label class="auth-form-label" for="auth-form-children">
                     дети:
                   </label>
@@ -297,19 +310,20 @@
                       Посмотреть дополнительную информацию
                     </span>
                   </button>
-                  <p class="auth-form-info-text">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </p>
-                </div>
-                <button class="minus"></button>
-                <input class="auth-form-children quantity-children" type="number" id="auth-form-children">
-                <button class="plus"></button>
-                <button class="auth-form-search">
-                  Найти
-                </button>
+                  <div class="button-minus-plus-wrap">
+                    <button class="minus"></button>
+                    <input class="auth-form-children quantity-children" type="number" id="auth-form-children" value="2">
+                    <button class="plus"></button>
+                  </div>
               </div>
+              <button class="auth-form-search">
+                Найти
+              </button>
             </form>
           </section>
+          <div class="auth-form-info-text">
+            <p class="info-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+          </div>
         </div>
       </div>
     </div>
