@@ -225,7 +225,7 @@ html {
   line-height: 26px;
   text-align: center;
 }
-
+/* Список преимуществ */
 .reasons-list {
   margin: 0;
   padding: 0;
@@ -272,7 +272,20 @@ html {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  margin-bottom: 62px;
+  margin: 0 0 62px 0;
+}
+.reasons-title::before {
+  display: block;
+  position: relative;
+  content: "";
+  margin: 0 auto;
+  width: 60px;
+  height: 2px;
+  top: 86px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.reasons-description {
+  margin: 0;
 }
 .reasons-item:first-child .reasons-title::before,
 .reasons-item:last-child .reasons-title::before {
@@ -282,20 +295,9 @@ html {
   margin: 0 auto;
   width: 60px;
   height: 2px;
-  top: 100px;
+  top: 87px;
   background-color: rgba(256, 256, 256, 0.3);
 }
-.reasons-title::before {
-  display: block;
-  position: relative;
-  content: "";
-  margin: 0 auto;
-  width: 60px;
-  height: 2px;
-  top: 100px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .item-title {
   color: #000000;
   font-size: 24px;
