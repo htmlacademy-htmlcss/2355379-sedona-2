@@ -72,7 +72,7 @@ html {
 .nav-list {/**/
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 168px;
+  margin: 0 0 0 30px;
   padding: 0;
 }
 .nav-user {/**/
@@ -96,15 +96,14 @@ html {
   font-weight: 400;
   color: #ffffff;
   background-color: #7db54f;
-  left: 23px;
-  top: 12px;
+  left: 20px;
+  top: 11px;
   text-align: center;
   align-content: center;
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
-
 .user-icon {
   position: absolute;
   top: 0;
@@ -121,6 +120,9 @@ html {
   position: relative;
   width: 44px;
   height: 64px;
+}
+.nav-user .user-item:nth-child(2) {
+  margin-right: auto;
 }
 .nav-link {/**/
   display: block;
@@ -204,10 +206,18 @@ html {
 }
 .slogan-wrapper {
   width: 651px;
+  /*min-height: 261px;*/
   margin: 0 auto 21px auto;
-  padding: 69px 274.5px;
+  padding: 69px 275px;
   color: #000000;
   background-color: #ffffff;
+}
+.slogan-wrapper h2,
+.slogan-wrapper p {
+  margin: 0;
+}
+.slogan-wrapper h2 {
+  margin-bottom: 25px;;
 }
 .slogan-reasons {
   font-size: 22px;
@@ -649,7 +659,6 @@ html {
   margin-right: auto;
 }
 
-
 /* CATALOG.HTML */
 /* ************************************************************* */
 .hotel-search-wrapper {
@@ -962,6 +971,7 @@ input[type="number"]:focus {
 .hotel-card-link-title {
   grid-area: title;
   text-decoration: none;
+  color: #000000;
 }
 .hotel-card-title {
   margin: 0;
