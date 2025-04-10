@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
         <nav class="nav">
-          <a class="nav-logo-link" href="#">
+          <a class="nav-logo-link" href="index.html">
             <img class="logo-img" src="images/logotype/logotype.png" width="140" height="70" alt="Логотип">
           </a>
           <ul class="nav-list">
@@ -37,14 +38,14 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="user-link" href="">
+              <a class="user-link" href="favourites.html" target="_blank">
                 <span class="visually-hidden">Избранное</span>
                 <svg class="user-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none"><path fill="#000" d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
               <span class="user-counter">12</span>
               </a>
             </li>
             <li class="user-item user-registration">
-              <button class="button button-registration">Хочу сюда!</button>
+              <a class="button button-registration" href="registration.html" target="_blank">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -80,27 +81,35 @@
             </h2>
             <form class="hotels-filter" action="http://echo.htmlacademy.ru" method="post">
               <fieldset class="fieldset infrastructure">
-                <legend class="legend infrastructure-title">Инфраструктура:</legend>
+                <legend class="legend infrastructure-title">
+                  Инфраструктура:
+                </legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <label class="control" for="swimm">
                       <input class="control-input visually-hidden" type="checkbox" name="swimm" id="swimm" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label">Бассейн</span>
+                      <span class="control-label">
+                        Бассейн
+                      </span>
                     </label>
                   </li>
                   <li class="infrastructure-item">
                     <label class="control" for="parking">
-                      <input class="control-input visually-hidden" type="checkbox" name="parking"  id="parking" checked>
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" id="parking" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label">Парковка</span>
+                      <span class="control-label">
+                        Парковка
+                      </span>
                     </label>
                   </li>
                   <li class="infrastructure-item">
                     <label class="control" for="wi-fi">
-                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi"  id="wi-fi">
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                       <span class="control-mark"></span>
-                      <span class="control-label">Wi-Fi</span>
+                      <span class="control-label">
+                        Wi-Fi
+                      </span>
                     </label>
                   </li>
                 </ul>
@@ -110,20 +119,29 @@
                   <ul class="housing-list">
                     <li class="housing-item">
                       <label class="control" for="hotel">
-                        <input class="control-input" type="radio" name="housing" id="hotel" checked>
-                        Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="hotel" checked>
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Гостиница
+                        </span>
                       </label>
                     </li>
                     <li class="housing-item">
                       <label class="control" for="motel">
-                        <input class="control-input" type="radio" name="housing" id="motel">
-                        Мотель
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="motel">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Мотель
+                        </span>
                       </label>
                     </li>
                     <li class="housing-item">
                       <label class="control" for="apartment">
-                        <input class="control-input" type="radio" name="housing" id="apartment">
-                        Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="housing" id="apartment">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">
+                          Апартаменты
+                        </span>
                       </label>
                     </li>
                   </ul>
@@ -135,19 +153,25 @@
                   <div class="calculation-wrap">
                     <div class="calculation-cost">
                       <label class="cost-from-title">
-                        <input class="cost-from" type="number" value="0"><span class="visually-hidden">от</span>
+                        <input class="cost-from" type="number" value="0">
+                        <span class="cost-from-text"></span>
                       </label>
                       <label class="cost-before-title">
-                        <input class="cost-before" type="number" value="9000"><span class="visually-hidden">до</span>
+                        <input class="cost-before" type="number" value="9000" placeholder="до">
+                        <span class="cost-before-text"></span>
                       </label>
                     </div>
                     <div class="calculation-scale">
                       <div class="calculation-button-bar" style="left: 0; width: 186px;">
                         <button class="cost-button cost-button-min" type="button">
-                          <span class="visually-hidden">Изменить минимальную цену</span>
+                          <span class="visually-hidden">
+                            Изменить минимальную цену
+                          </span>
                         </button>
                         <button class="cost-button cost-button-max" type="button">
-                          <span class="visually-hidden">Изменить максимальную цену</span>
+                          <span class="visually-hidden">
+                            Изменить максимальную цену
+                          </span>
                         </button>
                       </div>
                     </div>
@@ -157,7 +181,7 @@
                 <button class="button button-send button-active" type="submit">
                   Применить
                 </button>
-                <button class="button button-reset" type="submit">
+                <button class="button button-reset" type="reset">
                   Сбросить
                 </button>
               </div>
@@ -180,19 +204,19 @@
             </select>
             <ul class="result-list">
               <li class="result-item result-item-border">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
                 </a>
               </li>
               <li class="result-item">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать по одной</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
                 </a>
               </li>
               <li class="result-item">
-                <a class="button-view" href="#">
+                <a class="button-view" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                   <svg class="catalog-view" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
                 </a>
@@ -214,9 +238,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 4000 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites">
               в избранное
             </button>
@@ -240,9 +264,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 5000 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites button-favourites-active">
               в избранное
             </button>
@@ -266,9 +290,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 2500 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button button-favourites">
               в избранное
             </button>
@@ -291,9 +315,9 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-cost">От 1500 ₽</span>
-            <button class="button button-details">
+            <a class="button button-details" href="detailes.html">
               подробнее
-            </button>
+            </a>
             <button class="button-favourites button">
               в избранное
             </button>
@@ -377,19 +401,22 @@
 
             </ul>
           </section>
-          <h2 class="visually-hidden">
-            Наш телефон
-          </h2>
+
           <address class="footer-phone">
+            <h2 class="visually-hidden">
+              Наш телефон
+            </h2>
             <a class="phone-link" href="tel:+78128121212">
               +7 (812) 812-12-12
             </a>
           </address>
-          <section class="footer-htmlAcademy">
-            <h2 class="visually-hidden">
-              Разработчик сайта htmlAcademy
-            </h2>
-            <img class="logo-htmlacademy" src="images/logotype/html-academy.svg" width="115" height="33" alt="Логотип Академии">
+          <section class="footer-htmlacademy">
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+              <h2 class="visually-hidden">
+                Разработчик сайта htmlAcademy
+              </h2>
+              <img class="logo-htmlacademy" src="images/logotype/html-academy.svg" width="115" height="33" alt="Логотип Академии">
+            </a>
           </section>
         </div>
           <p class="visually-hidden" style="font-size: 12px; text-align: right;">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
