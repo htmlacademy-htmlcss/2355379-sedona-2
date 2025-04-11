@@ -73,7 +73,7 @@ html {
 .nav-list {/**/
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 29px;
   padding: 0;
 }
 .nav-user {/**/
@@ -423,8 +423,7 @@ html {
   margin: 0;
 }
 .subscription h2 {
-  margin-bottom: 20px;
-
+  margin-bottom: 30px;
 }
 .subscription p {
   margin-bottom: 54px;
@@ -454,8 +453,7 @@ html {
 .subscription-title-index {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
-  line-height: 36px;
-
+  line-height: 18px;
   text-transform: uppercase;
 }
 .subscription-description {
@@ -501,15 +499,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 43px 70px 30px;
 }
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 235px;
+  width: 142px;
 }
 .social-item {
   display: block;
@@ -520,11 +517,13 @@ html {
   display: block;
   padding: 13px 12px;
 }
-
+.telegram {
+  position: relative;
+  left: 3px;
+}
 .phone-link {
   font-size: 40px;
-  font-size: 40px;
-  line-height: 40px;
+  line-height: 43px;
   color: #000000;
   font-style: normal;
   text-transform: uppercase;
@@ -532,6 +531,10 @@ html {
 }
 .htmlacademy-link {
   display: block;
+}
+.logo-htmlacademy {
+  position: relative;
+  top: 3px;
 }
 
 .modal-container {
@@ -685,14 +688,17 @@ html {
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
 }
-.inner-header-title {Ы
+.inner-header-title {
   font-family: "PT Sans", sans-serif;
+  font-size: 60px;
   font-weight: 700;
   line-height: 78px;
   margin: 0 0 8px 0;
   padding: 0;
 }
 .nav-crumbs-list {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
   display: flex;
   margin: 0;
   padding: 0 0 40px 0;
@@ -718,9 +724,15 @@ html {
 
 .hotels-filter {
   display: flex;
-  justify-content: space-between;
+}
+.hotels-filter .fieldset:first-child {
+  margin-right: 70px;
+}
+.hotels-filter .fieldset:nth-child(2) {
+  margin-right: 150px;
 }
 .fieldset {
+  text-transform: capitalize;
   border: none;
   margin: 0;
   padding: 0;
@@ -729,6 +741,7 @@ html {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
+  text-indent: -2px;
 }
 .infrastructure-list,
 .housing-list {
@@ -737,7 +750,7 @@ html {
   padding: 0;
 }
 .infrastructure-list {
-  margin-right: 70px;
+
 }
 .infrastructure-item:not(.infrastructure-item:last-child),
 .housing-item:not(.housing-item:last-child) {
@@ -777,7 +790,6 @@ html {
 }
 
 .calculation {
-  margin-left: 140px;
   display: flex;
   flex-direction: column;
 }
@@ -785,11 +797,13 @@ html {
   width: 289px;
 }
 .cost {
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 32px;
 }
 .calculation-cost {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
 }
 .cost-from,
 .cost-before {
@@ -886,6 +900,7 @@ input[type="number"]:focus {
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  margin-left: auto;
 }
 .button-send {
   font-family: "PT Sans", sans-serif;
