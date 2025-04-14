@@ -265,6 +265,7 @@
                 </label>
                 <div class="calendar-wrap">
                   <input class="auth-form-data date-entry" type="date" id="auth-form-date-in" value="2020-04-27">
+                  <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><g fill="#000" opacity=".3"><path d="M7.8 12c.3 0 .5-.2.5-.5S8 11 7.7 11s-.5.2-.5.5.3.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.3 12c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM7.8 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.6-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.3 13c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                   <p class="auth-form-detailed-in entry-detailed">
                     Мы не можем отправить вас в прошлое.
                   </p>
@@ -276,6 +277,7 @@
                 </label>
                 <div class="calendar-wrap">
                   <input class="auth-form-data date-exit" type="date" id="auth-form-date-out" value="2023-09-01">
+                  <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><g fill="#000" opacity=".3"><path d="M7.8 12c.3 0 .5-.2.5-.5S8 11 7.7 11s-.5.2-.5.5.3.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.3 12c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM7.8 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.6-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.3 13c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
                   <p class="auth-form-detailed-out exit-detailed">
                     На эти даты есть свободные номера. Пока есть.
                   </p>
@@ -293,7 +295,7 @@
                     </button>
                     <input class="auth-form-adults" type="text" id="auth-form-adults" value="2">
                     <button class="button-plus">
-                      <svg  class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg  class="svg-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
                       </svg>
                     </button>
@@ -308,9 +310,17 @@
                     </span>
                   </button>
                   <div class="button-minus-plus-wrap">
-                    <button class="minus"></button>
+                    <button class="button-minus">
+                      <svg class="svg-minus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
                     <input class="auth-form-children quantity-children" type="number" id="auth-form-children" value="2">
-                    <button class="plus"></button>
+                    <button class="button-plus">
+                      <svg  class="svg-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
                   </div>
               </div>
               <button class="auth-form-search">

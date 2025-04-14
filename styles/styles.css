@@ -614,15 +614,16 @@ fill: #83B3D3;
   border-radius: 30px;
 }
 .modal-content {
+  position: relative;
   width: 577px;
 }
 .modal-close-button {
   position: absolute;
   padding: 0;
   width: 52px;
+  height: 52px;
   top: 64px;
   right: 52px;
-  height: 52px;
   border: none;
   background-color: #f2f2f2;
   background-image: url("../images/svg/close.svg");
@@ -635,7 +636,7 @@ fill: #83B3D3;
   margin: 0 0 64px 0;
   font-family: "PT sans", sans-serif;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 38px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -668,9 +669,16 @@ fill: #83B3D3;
   align-items: baseline;
 }
 .calendar-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.calendar {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  background-color: #f2f5f2;
 }
 .auth-form-label {
   width: 137px;
@@ -679,6 +687,13 @@ fill: #83B3D3;
   line-height: 24px;
   font-weight: 700;
   text-transform: capitalize;
+}
+.calendar-wrap .auth-form-detailed-in,
+.calendar-wrap .auth-form-detailed-out {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
 }
 .guests {
   min-height: 48px;
@@ -711,7 +726,8 @@ fill: #83B3D3;
 .button-minus {
   position: absolute;
   border: none;
-  top: 10px;
+  top: 13px;
+  left: 5px;
   background-color: transparent;
 }
 .svg-minus {
@@ -719,21 +735,29 @@ fill: #83B3D3;
   stroke-width: 0;
   cursor: pointer;
 }
-.button-minus:hover .svg-minus {
-  fill: none;
+.button-minus:hover .svg-minus path,
+.button-plus:hover .svg-plus path {
+  fill-opacity: 1;
+  fill: #000000;
+}
+.button-plus {
+  position: absolute;
+  border: none;
+  top: 13px;
+  right: 4px;
+  background-color: transparent;
 }
 .svg-plus {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 3px;
-  right: 30px;
-  background-image: url("../images/svg/button-plus.svg");
-  border: none;
+  stroke: none;
+  stroke-width: 0;
   cursor: pointer;
 }
+
 .auth-form-info {
   margin-right: auto;
+}
+.auth-form-info-text {
+  position: absolute;
 }
 
 /* CATALOG.HTML */
