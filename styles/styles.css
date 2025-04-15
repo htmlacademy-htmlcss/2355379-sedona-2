@@ -688,6 +688,10 @@ fill: #83B3D3;
   font-weight: 700;
   text-transform: capitalize;
 }
+.guests .auth-form-label:nth-of-type(2) {
+  width: 95px;
+  margin-left: auto;
+}
 .calendar-wrap .auth-form-detailed-in,
 .calendar-wrap .auth-form-detailed-out {
   font-family: "PT Sans", sans-serif;
@@ -696,11 +700,12 @@ fill: #83B3D3;
   font-weight: 400;
 }
 .guests {
+  position: relative;
   min-height: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: baseline;
-  margin: 0 0 48px 0;
+  margin: 0 0 43px 0;
 }
 .guests input {
   box-sizing: border-box;
@@ -754,10 +759,46 @@ fill: #83B3D3;
 }
 
 .auth-form-info {
-  margin-right: auto;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  top: 6px;
+  right: 42px;
+}
+.svg-auth-form-label {
+  fill: #83B3D3;
+}
+.svg-auth-form-label path {
+  fill: #ffffff;
 }
 .auth-form-info-text {
   position: absolute;
+  top: 410px;
+  right: 112px;
+  width: 256px;
+  min-height: 143px;
+  padding: 19px 18px 18px 22px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.auth-form-info-text::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: -7px;
+  left: 120px;
+  transform: rotate(45deg);
+  background-color: #333333;
+}
+.info-text {
+  margin: 0;
+  color:#ffffff;
+  background-color: #333333;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* CATALOG.HTML */
