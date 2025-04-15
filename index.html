@@ -8,7 +8,7 @@
   </head>
   <body class="page-body">
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="nav">
           <a class="nav-logo-link" href="#">
             <img class="logo-img" src="images/logotype/logotype.png" width="140" height="70" alt="Логотип">
@@ -51,15 +51,15 @@
         </nav>
       </header>
 
-      <main class="page-main">
-        <section class="advantages">
+      <main class="page-main" data-test="main">
+        <section class="advantages" data-test="hero">
           <div class="background-billboard">
             <h1 class="visually-hidden">
               Туристический городок Седона
             </h1>
             <img class="advantages-billboard" src="images/welcome.png" width="458" height="352" alt="Рекламный щит - Добро пожаловать в Седону!">
           </div>
-          <div class="slogan-wrapper">
+          <div class="slogan-wrapper" data-test="advantages"> <!--data-test="hero"-->
             <h2 class="title slogan"><!--slogan лишний-->
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h2>
@@ -68,7 +68,7 @@
             </p>
           </div>
 
-          <ul class="reasons-list">
+          <ul class="reasons-list" data-test="advantages">
             <li class="reasons-item">
               <div class="inner-item">
                 <h3 class="reasons-title">
@@ -124,7 +124,7 @@
           </ul>
         </section>
 
-        <section class="service">
+        <section class="service" data-test="service">
           <div class="title-wrap">
             <h2 class="title service-title">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -167,7 +167,7 @@
           </ul>
         </section>
 
-        <section class="hotel-offers">
+        <section class="hotel-offers" data-test="search">
           <h2 class="title offers-title">
             Заинтересовались?
           </h2>

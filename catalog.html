@@ -8,7 +8,7 @@
   </head>
   <body class="page-body">
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="nav">
           <a class="nav-logo-link" href="index.html">
             <img class="logo-img" src="images/logotype/logotype.png" width="140" height="70" alt="Логотип">
@@ -51,7 +51,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
 
         <div class="hotel-search-wrapper">
           <header class="inner-header">
@@ -75,7 +75,7 @@
             </nav>
           </header>
 
-          <section class="hotels">
+          <section class="hotels" data-test="filter" data-test="filter">
             <h2 class="visually-hidden">
               Фильтр выбора гостиниц
             </h2>
@@ -202,7 +202,7 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <ul class="result-list">
+            <ul class="result-list" data-test="catalog">
               <li class="result-item result-item-border">
                 <a class="button-view" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
@@ -226,7 +226,7 @@
         </section>
 
       <section class="cards">
-        <ul class="cards-list cards-selected">
+        <ul class="cards-list cards-selected" data-test="catalog">
           <li class="cards-item">
             <a class="hotel-card-link-title" href="">
               <h3 class="hotel-card-title">
@@ -354,7 +354,7 @@
         </nav>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <div class="subscription-wrap">
           <h2 class="subscription-title">
             Подпишитесь на рассылку
@@ -374,7 +374,7 @@
       </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <div class="footer-wrap">
           <section class="footer-social">
             <h2 class="visually-hidden">

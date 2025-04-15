@@ -603,7 +603,7 @@ fill: #83B3D3;
   background-color: rgba(242, 242, 242, 0.8);
 }
 .modal-container-close {
-  display: ;
+  display: none;
 }
 .modal {
   position: relative;
