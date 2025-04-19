@@ -127,7 +127,7 @@ html {
 .nav-user .user-item:nth-child(2) {
   margin-right: auto;
 }
-.nav-link {/**/
+.nav-link {
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -144,10 +144,8 @@ html {
 .nav-item {
   position: relative;
 }
-
 .nav-link-current:focus {
   outline: 1px solid #000000;
-
 }
 .nav-link-current::before {
   position: absolute;
@@ -229,7 +227,6 @@ html {
 }
 .slogan-wrapper {
   width: 651px;
-  /*min-height: 261px;*/
   margin: 0 auto 21px auto;
   padding: 69px 275px;
   color: #000000;
@@ -240,7 +237,7 @@ html {
   margin: 0;
 }
 .slogan-wrapper h2 {
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
 }
 .slogan-reasons {
   font-size: 22px;
@@ -269,7 +266,6 @@ html {
 .reasons-item:nth-child(3n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
-
 .reasons-item:first-child,
 .reasons-item:last-child {
   padding: 0;
@@ -447,7 +443,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   text-align: center;
 }
 .subscription h2,
@@ -560,17 +555,11 @@ html {
 .social {
   display: block;
   padding: 10px 12px;
-
 }
 .vk,
 .telegram,
 .youtube {
 fill: #83B3D3;
-}
-.social:hover .vk,
-.social:hover .telegram ,
-.social:hover .youtube {
-  fill: #68A2CA;
 }
 .social:hover .vk,
 .social:hover .telegram ,
@@ -623,9 +612,6 @@ fill: #83B3D3;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-}
-.modal-container-close {
-  display: ;
 }
 .modal {
   position: relative;
@@ -946,7 +932,6 @@ fill: #83B3D3;
 .control-input:focus + .control-mark {
   outline: 2px solid #000000;
 }
-
 .control-mark-radio {
   display: flex;
   justify-content: center;
@@ -976,13 +961,11 @@ fill: #83B3D3;
 }
 .control-input:checked + .control-mark-radio {
   background-color: #c6d8e7;
-
   background-image: url("../images/svg/radio-point.svg");
 }
 .control-input:hover + .control-mark-radio {
   outline: 2px solid #000000;
 }
-
 .calculation {
   display: flex;
   flex-direction: column;
@@ -1016,7 +999,6 @@ fill: #83B3D3;
 .cost-before-title {
   position: relative;
 }
-
 .cost-from {
   border: none;
   border-bottom-left-radius: 4px;
@@ -1052,6 +1034,7 @@ fill: #83B3D3;
   top: 12px;
   right: 21px;
 }
+/*for mozilla*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1387,7 +1370,6 @@ input[type="number"]:focus {
   text-decoration: none;
   border-radius: 4px;
 }
-
 .pagination-link-points {
   color: #000000;
   background-color: #ffffff;
