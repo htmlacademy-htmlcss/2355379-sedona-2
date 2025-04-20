@@ -604,6 +604,10 @@ fill: #83B3D3;
 .htmlacademy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
+.modal-container-close {
+
+  visibility: hidden;
+}
 .modal-container {
   position: fixed;
   top: 0;
@@ -614,6 +618,7 @@ fill: #83B3D3;
   background-color: rgba(242, 242, 242, 0.8);
 }
 .modal {
+
   position: relative;
   width: 577px;
   margin: auto;
