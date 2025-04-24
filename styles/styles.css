@@ -1227,7 +1227,7 @@ input[type="number"]:focus {
     "stars rating";
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
-  row-gap: 16px;
+  row-gap: 15px;
   justify-content: center;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -1243,6 +1243,7 @@ input[type="number"]:focus {
   line-height: 28px;
   font-weight: 700;
   margin: 0;
+  padding: 2px 0;
 }
 .cards-item .hotel-card-link-img {
   grid-area: pictur;
