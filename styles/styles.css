@@ -74,7 +74,7 @@ html {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 29px;
+  margin: 0 0 0 28px;
   padding: 0;
 }
 .nav-user {
@@ -139,10 +139,12 @@ html {
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  border: 2px;
   margin: 0;
 }
 .nav-item {
   position: relative;
+  padding-right: 2px;
 }
 .nav-link-current:focus {
   outline: 1px solid #000000;
@@ -615,9 +617,11 @@ fill: #83B3D3;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
+/* при удалении none показывается модалка */
 .modal-container-close {
   display: none;
 }
+
 .modal {
   position: relative;
   width: 577px;
@@ -957,6 +961,11 @@ fill: #83B3D3;
   background-color: #c6d8e7;
   cursor: pointer;
 }
+/*.control-mark-radio::before:focus {
+  color: #ccdcea;
+  border: 2px solid #000;
+  cursor: pointer;
+}*/
 .control-mark-radio::before:active {
   content: "";
   display: block;
@@ -971,6 +980,10 @@ fill: #83B3D3;
   background-image: url("../images/svg/radio-point.svg");
 }
 .control-input:hover + .control-mark-radio {
+  /*outline: 2px solid #000000;*/
+  background-color: #c6d8e7;
+}
+.control-input:focus + .control-mark-radio {
   outline: 2px solid #000000;
   background-color: #c6d8e7;
 }
