@@ -922,10 +922,12 @@ fill: #83B3D3;
   background-color: #ccdcea;
   cursor: pointer;
 }
+
 .control-input:active + .control-mark {
   background-color: #a2bad4;
   cursor: pointer;
 }
+
 .control-label:hover {
   color: #ccdcea;
   cursor: pointer;
@@ -1062,7 +1064,7 @@ input[type="number"]:focus {
   background-color: #5E676C;
 }
 .calculation-button-bar {
-  position: absolute;
+  position: relative;
   height: 4px;
   background-color: #ffffff;
 }
