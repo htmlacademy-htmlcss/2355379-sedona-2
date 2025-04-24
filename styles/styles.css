@@ -897,11 +897,11 @@ fill: #83B3D3;
 }
 .infrastructure-item:not(.infrastructure-item:last-child),
 .housing-item:not(.housing-item:last-child) {
+  display: flex;
   margin-bottom: 16px;
 }
 .control {
   display: flex;
-  align-self: center;
   position: relative;
 }
 .control-label {
@@ -945,8 +945,7 @@ fill: #83B3D3;
 }
 .control-mark-radio {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   width: 20px;
   height: 20px;
   margin-right: 16px;
@@ -1240,7 +1239,6 @@ input[type="number"]:focus {
   padding: 0;
 }
 .hotel-card-title {
-  display: inline-block;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
