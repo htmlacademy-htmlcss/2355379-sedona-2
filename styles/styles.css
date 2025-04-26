@@ -74,7 +74,7 @@ html {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 29px;
+  margin: 0 0 0 28px;
   padding: 0;
 }
 .nav-user {
@@ -139,10 +139,12 @@ html {
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  border: 2px;
   margin: 0;
 }
 .nav-item {
   position: relative;
+  padding-right: 2px;
 }
 .nav-link-current:focus {
   outline: 1px solid #000000;
@@ -279,7 +281,7 @@ html {
   padding: 0 85px;
 }
 .reasons-item > .reasons-wrap {
-  width: 230px;
+  width: 235px;
   margin: auto;
 }
 .inner-wrap {
@@ -306,6 +308,7 @@ html {
 .reasons-description {
   margin: 0;
 }
+
 .reasons-item:first-child .reasons-title::before,
 .reasons-item:last-child .reasons-title::before {
   display: block;
@@ -604,10 +607,7 @@ fill: #83B3D3;
 .htmlacademy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
-.modal-container-close {
 
-  visibility: hidden;
-}
 .modal-container {
   position: fixed;
   top: 0;
@@ -617,8 +617,12 @@ fill: #83B3D3;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-.modal {
+/* при удалении none показывается модалка */
+.modal-container-close {
+  display: none;
+}
 
+.modal {
   position: relative;
   width: 577px;
   margin: auto;
@@ -893,11 +897,11 @@ fill: #83B3D3;
 }
 .infrastructure-item:not(.infrastructure-item:last-child),
 .housing-item:not(.housing-item:last-child) {
+  display: flex;
   margin-bottom: 16px;
 }
 .control {
   display: flex;
-  align-self: center;
   position: relative;
 }
 .control-label {
@@ -922,10 +926,12 @@ fill: #83B3D3;
   background-color: #ccdcea;
   cursor: pointer;
 }
+
 .control-input:active + .control-mark {
   background-color: #a2bad4;
   cursor: pointer;
 }
+
 .control-label:hover {
   color: #ccdcea;
   cursor: pointer;
@@ -937,13 +943,19 @@ fill: #83B3D3;
 .control-input:focus + .control-mark {
   outline: 2px solid #000000;
 }
+@-moz-document url-prefix() {
+  .control-input:focus + .control-mark {
+    box-shadow: 0 0 0 2px white inset;
+    box-sizing: border-box;
+    outline: 1px solid #ffffff;
+    border: 2px solid #0060df;
+  }
+}
 .control-mark-radio {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto 16px auto auto;
   width: 20px;
   height: 20px;
-  margin-right: 16px;
   color: #000000;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -965,11 +977,24 @@ fill: #83B3D3;
   border-radius: 50%;
 }
 .control-input:checked + .control-mark-radio {
-  background-color: #c6d8e7;
+  background-color: #ffffff;
   background-image: url("../images/svg/radio-point.svg");
 }
 .control-input:hover + .control-mark-radio {
+  /*outline: 2px solid #000000;*/
+  background-color: #c6d8e7;
+}
+.control-input:focus + .control-mark-radio {
   outline: 2px solid #000000;
+  background-color: #c6d8e7;
+}
+@-moz-document url-prefix() {
+  .control-input:focus + .control-mark-radio {
+    /*box-shadow: 0 0 0 2px white inset;*/
+    box-sizing: border-box;
+    outline: 1px solid #ffffff;
+    border: 2px solid #0060df;
+  }
 }
 .calculation {
   display: flex;
@@ -1053,6 +1078,7 @@ input[type="number"]:focus {
   -moz-appearance: number-input;
 }
 
+
 .calculation-scale {
   position: relative;
   width: 287px;
@@ -1060,7 +1086,7 @@ input[type="number"]:focus {
   background-color: #5E676C;
 }
 .calculation-button-bar {
-  position: absolute;
+  position: relative;
   height: 4px;
   background-color: #ffffff;
 }
@@ -1211,7 +1237,7 @@ input[type="number"]:focus {
     "stars rating";
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
-  row-gap: 16px;
+  row-gap: 15px;
   justify-content: center;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -1223,11 +1249,11 @@ input[type="number"]:focus {
   padding: 0;
 }
 .hotel-card-title {
-  display: inline-block;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   margin: 0;
+  padding: 2px 0;
 }
 .cards-item .hotel-card-link-img {
   grid-area: pictur;
