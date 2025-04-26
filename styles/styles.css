@@ -943,12 +943,19 @@ fill: #83B3D3;
 .control-input:focus + .control-mark {
   outline: 2px solid #000000;
 }
+@-moz-document url-prefix() {
+  .control-input:focus + .control-mark {
+    box-shadow: 0 0 0 2px white inset;
+    box-sizing: border-box;
+    outline: 1px solid #ffffff;
+    border: 2px solid #0060df;
+  }
+}
 .control-mark-radio {
   display: flex;
-  margin: auto;
+  margin: auto 16px auto auto;
   width: 20px;
   height: 20px;
-  margin-right: 16px;
   color: #000000;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -960,11 +967,6 @@ fill: #83B3D3;
   background-color: #c6d8e7;
   cursor: pointer;
 }
-/*.control-mark-radio::before:focus {
-  color: #ccdcea;
-  border: 2px solid #000;
-  cursor: pointer;
-}*/
 .control-mark-radio::before:active {
   content: "";
   display: block;
@@ -985,6 +987,14 @@ fill: #83B3D3;
 .control-input:focus + .control-mark-radio {
   outline: 2px solid #000000;
   background-color: #c6d8e7;
+}
+@-moz-document url-prefix() {
+  .control-input:focus + .control-mark-radio {
+    /*box-shadow: 0 0 0 2px white inset;*/
+    box-sizing: border-box;
+    outline: 1px solid #ffffff;
+    border: 2px solid #0060df;
+  }
 }
 .calculation {
   display: flex;
@@ -1067,7 +1077,7 @@ input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
 }
-/
+
 
 .calculation-scale {
   position: relative;
