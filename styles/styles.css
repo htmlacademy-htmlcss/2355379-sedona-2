@@ -981,16 +981,15 @@ fill: #83B3D3;
   background-image: url("../images/svg/radio-point.svg");
 }
 .control-input:hover + .control-mark-radio {
-  /*outline: 2px solid #000000;*/
   background-color: #c6d8e7;
 }
 .control-input:focus + .control-mark-radio {
   outline: 2px solid #000000;
   background-color: #c6d8e7;
 }
+/* восстанавливает фокус на FF */
 @-moz-document url-prefix() {
   .control-input:focus + .control-mark-radio {
-    /*box-shadow: 0 0 0 2px white inset;*/
     box-sizing: border-box;
     outline: 1px solid #ffffff;
     border: 2px solid #0060df;
@@ -1077,8 +1076,6 @@ input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
 }
-
-
 .calculation-scale {
   position: relative;
   width: 287px;
