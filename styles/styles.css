@@ -134,7 +134,12 @@ html {
   margin: auto;
   fill: #000000;
 }
-
+.user-icon:hover {
+  fill: #756157;
+}
+.user-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
 .nav-user .nav-item:not(.nav-item:last-child) {
   position: relative;
   width: 44px;
@@ -634,10 +639,11 @@ fill: #83b3d3;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 /* при удалении none показывается модалка */
 .modal-container-close {
-  display: none;
+  display: ;
 }
 .modal {
   position: relative;
@@ -660,11 +666,18 @@ fill: #83b3d3;
   right: 52px;
   border: none;
   background-color: #f2f2f2;
-  background-image: url("../images/svg/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+.modal-close-button:hover .modal-close-button-svg {
+  fill: #a1a1a1;
+}
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+.modal-close-button:active {
+  color: ;
 }
 .modal-title {
   margin: 0 0 64px 0;
@@ -737,6 +750,9 @@ fill: #83b3d3;
   line-height: 21px;
   font-weight: 400;
 }
+.entry-detailed {
+  color: #ff5757;
+}
 .guests {
   position: relative;
   min-height: 48px;
@@ -771,6 +787,9 @@ fill: #83b3d3;
 }
 .button-minus-plus-wrap {
   position: relative;
+}
+.button-minus-plus-wrap:hover input {
+  background-color: #e6e6e6;
 }
 .button-minus {
   position: absolute;
@@ -892,7 +911,12 @@ fill: #83b3d3;
   text-decoration: none;
   color: #ffffff;
 }
-
+.crumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.crumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .hotels-filter {
   display: flex;
   min-height: 160px;
