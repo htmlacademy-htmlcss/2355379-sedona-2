@@ -304,10 +304,12 @@ html {
 .reasons-item > .reasons-wrap {
   width: 235px;
   margin: auto;
+  padding: 50px 0;
 }
 .inner-wrap {
   width: 230px;
   margin: auto;
+
 }
 .reasons-title {
   font-size: 24px;
@@ -379,6 +381,8 @@ html {
   margin: 0;
   padding-left: 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .service-list .service-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
@@ -643,7 +647,7 @@ fill: #83b3d3;
 }
 /* при удалении none показывается модалка */
 .modal-container-close {
-  display: ;
+  display: none;
 }
 .modal {
   position: relative;
