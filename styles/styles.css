@@ -54,7 +54,17 @@ html {
   padding: 0;
   display: flex;
 }
+.nav-item-logo {
+  width: 138px;
+  margin-right: 30px;
+}
+.nav-logo-link-wrap {
+  width: 138px;
+  margin-right: 30px;
+}
 .nav-logo-link {
+  display: inline-block;
+  position: absolute;
   width: 140px;
   z-index: 1;
 }
@@ -72,18 +82,24 @@ html {
   list-style-type: none;
 }
 .nav-list {
+  max-width: 524px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 28px;
+  margin: 0;
   padding: 0;
 }
 .nav-user {
   width: 268px;
+  min-height: 64px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
+  align-items: flex-start;
   padding: 0;
   margin: 0 0 0 auto;
+}
+.user-registration {
+  padding: 14px 0;
 }
 .user-link {
   position: relative;
@@ -144,7 +160,7 @@ html {
 }
 .nav-item {
   position: relative;
-  padding-right: 2px;
+  padding-right: 1px;
 }
 .nav-link-current:focus {
   outline: 1px solid #000000;
@@ -181,8 +197,7 @@ html {
   background-color: #615048;
 }
 .button-condition:active {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 .button-condition:disabled,
 .button-active:disabled {
@@ -621,7 +636,6 @@ fill: #83B3D3;
 .modal-container-close {
   display: none;
 }
-
 .modal {
   position: relative;
   width: 577px;
@@ -691,6 +705,10 @@ fill: #83B3D3;
   flex-direction: column;
   justify-content: center;
 }
+.calendar-wrap input:hover {
+  background-color: #e6e6e6;
+}
+
 .calendar {
   position: absolute;
   top: 13px;
@@ -741,6 +759,12 @@ fill: #83B3D3;
   background-color: #83b3d3;
   border: none;
   border-radius: 10px;
+}
+.auth-form-search:hover {
+  background-color: #68a2ca;
+}
+.auth-form-search:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .button-minus-plus-wrap {
   position: relative;
