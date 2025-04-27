@@ -376,7 +376,7 @@ html {
   display: flex;
 }
 .service-list .service-item:nth-child(odd) {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .item-title {
   margin: 102px auto 30px auto;
