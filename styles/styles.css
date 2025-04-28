@@ -466,12 +466,20 @@ html {
 }
 
 .subscription {
-  background-color: #ffffff;
   min-height: 415px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 50px 0;
+}
+.subscription-background {
+  color: #ffffff;
+  background-color: #486998;
+  background: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .subscription h2,
 .subscription p {
@@ -482,12 +490,6 @@ html {
 }
 .subscription p {
   margin-bottom: 54px;
-}
-.subscription-background {
-  color: #ffffff;
-  background-color: #486998;
-  background: url("../images/subscribe-background.jpg");
-  background-repeat: no-repeat;
 }
 .subscription-wrap {
   width: 684px;
