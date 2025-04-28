@@ -471,7 +471,6 @@ html {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 50px 0;
 }
 .subscription-background {
   color: #ffffff;
@@ -479,7 +478,6 @@ html {
   background: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .subscription h2,
 .subscription p {
@@ -495,6 +493,7 @@ html {
   width: 684px;
   align-self: center;
   padding-bottom: 10px;
+  margin: 50px 0;
 }
 .subscription-wrap form {
   display: flex;
@@ -569,7 +568,7 @@ html {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 43px 70px 30px;
 }
 .social-list {
@@ -607,6 +606,10 @@ fill: #83b3d3;
   position: relative;
   left: 3px;
 }
+.address-wrap {
+  width: 720px;
+  text-align: center;
+}
 .phone-link {
   font-size: 40px;
   line-height: 43px;
@@ -620,6 +623,10 @@ fill: #83b3d3;
 }
 .phone-link:active {
   color: rgba(117, 97, 87, 0.3);
+}
+.phone {
+  display: inline-block;
+  margin: 0 10px;
 }
 .htmlacademy-link {
   display: block;
