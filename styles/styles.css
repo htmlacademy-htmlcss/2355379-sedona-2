@@ -229,12 +229,12 @@ html {
 }
 .background-billboard {
   width: 1200px;
-  height: 485px;
-  background-color: #437AA6;
+  min-height: 485px;
+  background-color: #83b3d3;
   background-image: url("../images/svg/decoration.svg"), url("../images/offer-background.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 .advantages {
   color: #000000;
