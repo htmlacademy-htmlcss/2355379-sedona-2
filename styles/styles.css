@@ -471,6 +471,7 @@ html {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #ffffff;
 }
 .subscription-background {
   color: #ffffff;
@@ -1457,7 +1458,7 @@ input[type="number"]:focus {
 .pagination-link-points {
   display: block;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   padding: 11px 18px;
   font-size: 20px;
