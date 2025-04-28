@@ -181,6 +181,7 @@ html {
 }
 
 .button {
+  height: 36px;
   color: #ffffff;
   background-color: #756157;
   border: none;
@@ -890,6 +891,7 @@ fill: #83b3d3;
   background-color: #82b3d3;
   background: url("../images/hotels-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 35px 70px 72px;
 }
 .inner-header-title {
